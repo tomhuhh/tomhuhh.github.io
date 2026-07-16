@@ -1,0 +1,33 @@
+---
+layout: default
+title: News & Updates
+description: "Professional updates and milestones from Haowen Hu's research and fellowships."
+permalink: /news.html
+---
+<section>
+  <div class="wrap" style="max-width:760px;">
+    <p class="eyebrow">News & Updates</p>
+    <h1 class="section-title">Updates</h1>
+    <p class="section-sub">Milestones, presentations, and recognition, newest first.</p>
+
+    <ul class="timeline">
+      {% assign sorted = site.data.news | sort: "date" | reverse %}
+      {% for item in sorted %}
+      <li class="timeline-item">
+        <span class="timeline-date">{{ item.date }}</span>
+        <h3>{{ item.title }}{% if item.needs_review %} <span class="status-badge review">Please verify</span>{% endif %}</h3>
+        <p>{{ item.summary }}</p>
+        {% if item.link_url and item.link_url != "" %}<a href="{{ item.link_url }}">{{ item.link_label }} →</a>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+
+    <div class="placeholder-note">
+      To add an update later: open <code>_data/news.yml</code> and copy an
+      existing block at the top. Use a real date (<code>YYYY-MM-DD</code> or
+      <code>YYYY-MM</code>) — don't invent one. One item above is flagged
+      <code>needs_review: true</code> because its year came from a partial
+      LinkedIn snippet and should be confirmed before publishing.
+    </div>
+  </div>
+</section>

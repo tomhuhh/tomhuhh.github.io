@@ -1,0 +1,30 @@
+title: "Haowen Hu"
+tagline: "Ph.D. Candidate, Animal Science — Cornell University"
+description: >-
+  Personal academic site of Haowen Hu, Ph.D. candidate in Animal Science at
+  Cornell University, researching whole-farm environmental modeling, dairy
+  sustainability, and the Ruminant Farm Systems (RuFaS) model.
+url: "https://tomhuhh.github.io"
+baseurl: ""
+
+author: "Haowen Hu"
+email: "hh598@cornell.edu"
+
+# --- Social / profile links (edit here to update site-wide) ---
+scholar_url: "https://scholar.google.com/citations?user=vURxme8AAAAJ&hl=en"
+linkedin_url: "https://www.linkedin.com/in/haowenhu919138876/"
+github_url: "https://github.com/tomhuhh"
+cv_file: "/assets/files/Haowen-Hu-CV.pdf"
+cv_last_updated: "July 2026"
+
+# --- Build settings ---
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules

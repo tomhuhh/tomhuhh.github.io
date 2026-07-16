@@ -1,0 +1,33 @@
+---
+layout: default
+title: Projects
+description: "Research and technical projects by Haowen Hu, including the RuFaS whole-farm model, ammonia field studies, and the FFAR Fellow StoryMap."
+permalink: /projects.html
+---
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Projects</p>
+    <h1 class="section-title">Projects</h1>
+    <p class="section-sub">A closer look at the work behind the publications, including featured media.</p>
+
+    <div class="grid">
+      {% for p in site.data.projects %}
+      <div class="card">
+        <p class="meta">{{ p.role }}</p>
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.description }}</p>
+        {% if p.methods and p.methods != "" %}<p class="small"><strong>Methods/tools:</strong> {{ p.methods }}</p>{% endif %}
+        {% if p.outcomes and p.outcomes != "" %}<p class="small"><strong>Outcomes:</strong> {{ p.outcomes }}</p>{% endif %}
+        {% for l in p.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% unless forloop.last %} &nbsp;·&nbsp; {% endunless %}{% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="placeholder-note">
+      To add a project later: open <code>_data/projects.yml</code> and copy
+      an existing block. Set <code>theme</code> to <code>modeling</code>,
+      <code>ammonia</code>, <code>precision</code>, or <code>ai</code> so it
+      also appears in the matching section of <a href="{{ '/research.html' | relative_url }}">Research</a>.
+    </div>
+  </div>
+</section>

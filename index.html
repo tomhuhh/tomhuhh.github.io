@@ -1,0 +1,121 @@
+---
+layout: default
+title: Home
+description: "Haowen Hu is a Ph.D. candidate in Animal Science at Cornell University researching whole-farm environmental modeling, dairy sustainability, and the RuFaS model."
+permalink: /
+---
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Ph.D. Candidate · Department of Animal Science · Cornell University</p>
+      <h1>Haowen Hu</h1>
+      <p class="headline">Building tools that help dairy systems measure, model, and improve their environmental footprint — from barn sensors to whole-farm simulation.</p>
+      <p>
+        I research whole-farm environmental and systems modeling for US dairy production, with a
+        focus on the <strong>Ruminant Farm Systems (RuFaS)</strong> model: quantifying ammonia and
+        greenhouse-gas emissions, refining models with field sensor data, and translating that work
+        into decision-support tools farmers and advisors can actually use.
+      </p>
+      <div class="hero-links">
+        <a class="btn primary" href="{{ site.cv_file | relative_url }}">Download CV (PDF)</a>
+        <a class="btn" href="{{ site.scholar_url }}">Google Scholar</a>
+        <a class="btn" href="{{ site.linkedin_url }}">LinkedIn</a>
+        <a class="btn" href="{{ site.github_url }}">GitHub</a>
+        <a class="btn" href="mailto:{{ site.email }}">Email</a>
+      </div>
+    </div>
+    <div class="hero-figure">
+      <div class="headshot-placeholder">
+        [ Placeholder — add a professional headshot at<br><code>/assets/img/headshot.jpg</code><br>and swap it in here ]
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">What I work on</p>
+    <h2 class="section-title">From the barn to the model</h2>
+    <p class="section-sub">A short version of how one research thread runs end to end.</p>
+
+    <svg class="model-diagram" viewBox="0 0 980 190" role="img" aria-labelledby="diagramTitle diagramDesc" xmlns="http://www.w3.org/2000/svg">
+      <title id="diagramTitle">Research workflow diagram</title>
+      <desc id="diagramDesc">Barn sensors feed field data into data assimilation, which refines the RuFaS model, which informs farm decisions on emissions and management.</desc>
+      <g font-family="Arial, sans-serif">
+        <!-- nodes -->
+        <g>
+          <rect x="10" y="55" width="200" height="80" rx="4" fill="var(--paper)" stroke="var(--line)"/>
+          <text x="110" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--ink)">Barn sensors</text>
+          <text x="110" y="108" text-anchor="middle" font-size="12" fill="var(--slate)">gas + ventilation flux</text>
+        </g>
+        <g>
+          <rect x="270" y="55" width="200" height="80" rx="4" fill="var(--pasture-light)" stroke="#cfe0d3"/>
+          <text x="370" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--pasture)">Data assimilation</text>
+          <text x="370" y="108" text-anchor="middle" font-size="12" fill="var(--slate)">field data → parameters</text>
+        </g>
+        <g>
+          <rect x="530" y="55" width="200" height="80" rx="4" fill="var(--paper)" stroke="var(--line)"/>
+          <text x="630" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--ink)">RuFaS model</text>
+          <text x="630" y="108" text-anchor="middle" font-size="12" fill="var(--slate)">whole-farm simulation</text>
+        </g>
+        <g>
+          <rect x="770" y="55" width="200" height="80" rx="4" fill="var(--pasture)" stroke="var(--pasture)"/>
+          <text x="870" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--paper)">Farm decisions</text>
+          <text x="870" y="108" text-anchor="middle" font-size="12" fill="#DDE9E1">emissions · cost · welfare</text>
+        </g>
+        <!-- arrows -->
+        <g stroke="var(--slate)" stroke-width="2" fill="none" marker-end="url(#arrow)">
+          <line x1="212" y1="95" x2="266" y2="95"/>
+          <line x1="472" y1="95" x2="526" y2="95"/>
+          <line x1="732" y1="95" x2="766" y2="95"/>
+        </g>
+      </g>
+      <defs>
+        <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 Z" fill="var(--slate)"/>
+        </marker>
+      </defs>
+    </svg>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <p class="eyebrow">Research interests</p>
+    <h2 class="section-title">Themes I return to</h2>
+    <ul class="chips">
+      <li class="chip">Whole-farm & systems modeling</li>
+      <li class="chip">Dairy sustainability &amp; GHG emissions</li>
+      <li class="chip">Ammonia &amp; manure management</li>
+      <li class="chip">Precision livestock &amp; ag data science</li>
+      <li class="chip">AI, LLMs &amp; agent workflows in agriculture</li>
+    </ul>
+    <p><a href="{{ '/research.html' | relative_url }}">See how these break down into specific projects →</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Currently</p>
+    <h2 class="section-title">Featured, right now</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="meta">Current focus</p>
+        <h3>RuFaS × COMET-Farm comparison</h3>
+        <p>Comparing RuFaS against COMET-Farm to identify what drives differences in greenhouse-gas estimates across five US Holstein dairies — manuscript in preparation, planned submission August 2026.</p>
+      </div>
+      <div class="card">
+        <p class="meta">Fellowship</p>
+        <h3>FFAR Fellow, 2023–2026</h3>
+        <p>One of 30 fellows nationally in the Foundation for Food &amp; Agriculture Research fellowship, completing 150+ hours of professional development in leadership, communication, and entrepreneurship.</p>
+      </div>
+      <div class="card">
+        <p class="meta">Recognition</p>
+        <h3>2026 NMPF Dairy Leadership Scholarship</h3>
+        <p>Awarded by the National Milk Producers Federation for doctoral research advancing whole-farm environmental modeling in US dairy systems.</p>
+        <a href="{{ '/media.html' | relative_url }}">Read more →</a>
+      </div>
+    </div>
+  </div>
+</section>

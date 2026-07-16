@@ -1,0 +1,74 @@
+---
+layout: default
+title: Publications
+description: "Peer-reviewed publications, manuscripts in preparation, and conference presentations by Haowen Hu."
+permalink: /publications.html
+---
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Publications</p>
+    <h1 class="section-title">Publications & presentations</h1>
+    <p class="section-sub">
+      Grouped below by type. See also my
+      <a href="{{ site.scholar_url }}">Google Scholar profile</a> for citation
+      metrics and the most current list.
+    </p>
+
+    <div class="pub-group" id="journal">
+      <h2>Peer-reviewed journal articles</h2>
+      <ol class="pub-list">
+        {% for pub in site.data.publications.journal %}
+        <li class="pub-item">
+          <span class="pub-num">{{ forloop.index }}.</span>
+          <div>
+            <p class="pub-title">{{ pub.title }}</p>
+            <p class="pub-cite">{{ pub.authors }} {{ pub.year }}. {{ pub.venue }}</p>
+            <p class="pub-links">
+              {% if pub.doi and pub.doi != "" %}<a href="{{ pub.doi }}">DOI / full text</a>{% endif %}
+              <a href="{{ site.scholar_url }}">Google Scholar</a>
+            </p>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <div class="pub-group" id="preparation">
+      <h2>Manuscripts under review or in preparation</h2>
+      <ol class="pub-list">
+        {% for pub in site.data.publications.preparation %}
+        <li class="pub-item">
+          <span class="pub-num">{{ forloop.index }}.</span>
+          <div>
+            <p class="pub-title">{{ pub.title }} <span class="status-badge review">{{ pub.status }}</span></p>
+            <p class="pub-cite">{{ pub.authors }}{% if pub.year %} {{ pub.year }}.{% endif %} {{ pub.venue }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <div class="pub-group" id="conference">
+      <h2>Conference abstracts & proceedings</h2>
+      <ol class="pub-list">
+        {% for pub in site.data.publications.conference %}
+        <li class="pub-item">
+          <span class="pub-num">{{ forloop.index }}.</span>
+          <div>
+            <p class="pub-title">{{ pub.title }}</p>
+            <p class="pub-cite">{{ pub.authors }} {{ pub.year }}. {{ pub.venue }}</p>
+            {% if pub.doi and pub.doi != "" %}<p class="pub-links"><a href="{{ pub.doi }}">Link</a></p>{% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <div class="placeholder-note">
+      To add a publication later: open <code>_data/publications.yml</code>,
+      copy an existing entry under the right group (<code>journal</code>,
+      <code>preparation</code>, or <code>conference</code>), and edit the
+      fields. No HTML editing required.
+    </div>
+  </div>
+</section>

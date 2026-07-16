@@ -1,0 +1,63 @@
+---
+layout: default
+title: Media & Recognition
+description: "News coverage, awards, and external recognition for Haowen Hu."
+permalink: /media.html
+---
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Media & Recognition</p>
+    <h1 class="section-title">Media & recognition</h1>
+
+    <h2 class="section-title" style="font-size:1.3rem;">In the news</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="meta">National Milk Producers Federation · June 9, 2026</p>
+        <h3>NMPF Awards 2026 National Dairy Leadership Scholarship Winners</h3>
+        <p>Named one of five 2026 recipients for doctoral research advancing whole-farm environmental modeling in US dairy systems.</p>
+        <a href="https://www.nmpf.org/nmpf-awards-2026-national-dairy-leadership-scholarship-winners/">Read the article →</a>
+      </div>
+      <div class="card">
+        <p class="meta">Hoard's Dairyman · October 20, 2025</p>
+        <h3>Data dependent: RuFaS refinement continues</h3>
+        <p>Coverage of ongoing RuFaS refinement work, including the comparison between RuFaS and COMET-Farm for greenhouse-gas accounting.</p>
+        <a href="https://hoards.com/article-37314-data-dependent-rufas-refinement-continues.html">Read the article →</a>
+      </div>
+    </div>
+    <p class="small">
+      Note: broader project coverage of RuFaS (e.g. from New York Ag
+      Connection) exists but doesn't name Haowen specifically, so it isn't
+      listed here as personal media coverage — see
+      <a href="{{ '/research.html' | relative_url }}">Research</a> for
+      project context instead.
+    </p>
+
+    <h2 class="section-title" style="font-size:1.3rem; margin-top:48px;">Profile & fellowships</h2>
+    <div class="grid">
+      <div class="card">
+        <p class="meta">Cornell Department of Animal Science · ArcGIS StoryMap</p>
+        <h3>Haowen Hu — FFAR Fellow, 2023–2026</h3>
+        <p>A department profile StoryMap on Haowen's path as a Foundation for Food & Agriculture Research Fellow.</p>
+        <a href="https://storymaps.arcgis.com/stories/56b8a197a88c4189a1382ed367852f00">View the StoryMap →</a>
+      </div>
+    </div>
+
+    <h2 class="section-title" style="font-size:1.3rem; margin-top:48px;">Honors & awards</h2>
+    <ul class="timeline">
+      {% for a in site.data.awards %}
+      <li class="timeline-item">
+        <span class="timeline-date">{{ a.year }}</span>
+        <h3 style="font-size:1.05rem;">{{ a.title }}</h3>
+        {% if a.org and a.org != "" %}<p class="small">{{ a.org }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+
+    <div class="placeholder-note">
+      Placeholder: if you have interviews, podcast features, or additional
+      press beyond what's listed here, add them as new cards above or ask to
+      have them added — I only included coverage I could independently verify
+      names a match for you specifically.
+    </div>
+  </div>
+</section>
