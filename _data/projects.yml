@@ -1,0 +1,97 @@
+# Add new projects by copying a block below.
+# theme options used on research.html: modeling | ammonia | precision | ai
+- title: "Field-based ammonia emission quantification and data assimilation in RuFaS"
+  theme: ammonia
+  role: "Graduate Research Assistant (lead)"
+  description: >
+    Leading field quantification of barn ammonia emissions using sensor networks
+    and ventilation-based flux methods at the Cornell CAST Farm of the Future
+    barns, then integrating those field measurements into the RuFaS model
+    through data assimilation to refine ammonia emission parameters.
+  methods: "Gas sensor networks, wind-speed / ventilation-based flux estimation, data assimilation, RuFaS"
+  outcomes: "High-temporal-resolution ammonia dataset used to refine RuFaS housing-emission predictions; presented at EGU General Assembly 2026 and ADSA 2025."
+  links:
+    - label: "EGU26 abstract"
+      url: "https://doi.org/10.5194/egusphere-egu26-8438"
+    - label: "Related publication"
+      url: "https://doi.org/10.3389/frsus.2025.1561453"
+
+- title: "RuFaS vs. COMET-Farm: methodological comparison of greenhouse-gas estimates"
+  theme: modeling
+  role: "Graduate Research Assistant (lead)"
+  description: >
+    Comparing the Ruminant Farm Systems (RuFaS) model against COMET-Farm, a
+    greenhouse-gas accounting tool widely used by researchers and
+    policymakers, to identify the methodological drivers behind differing
+    emissions estimates across US Holstein dairy systems.
+  methods: "Whole-farm simulation (RuFaS), COMET-Farm benchmarking, 5 US Holstein dairy case farms"
+  outcomes: "Manuscript in preparation (planned submission August 2026); simulated and benchmarked 12 US dairy systems against published data."
+  links:
+    - label: "Manuscript status"
+      url: "/publications.html#preparation"
+
+- title: "Multi-laboratory evaluation of manure nutrient analyses"
+  theme: modeling
+  role: "Project director"
+  description: >
+    Directed a multi-lab evaluation of manure volatile solids, total nitrogen,
+    and total ammoniacal nitrogen analyses across 6 commercial laboratories to
+    quantify measurement variability that propagates into farm nutrient and
+    emissions accounting.
+  methods: "Interlaboratory comparison, manure and biological sampling, statistical analysis"
+  outcomes: "Published in Journal of Dairy Science Communications (2026)."
+  links:
+    - label: "Read the paper"
+      url: "https://doi.org/10.3168/jdsc.2025-1007"
+
+- title: "RuFaS as the modeling engine for FARM Environmental Stewardship, Version 3"
+  theme: modeling
+  role: "Contributor"
+  description: >
+    Contributed to the development of RuFaS as the modeling engine behind
+    Version 3 of the industry's FARM Environmental Stewardship Program,
+    supporting an industry-aligned, decision-ready sustainability assessment
+    tool for US dairy operations.
+  methods: "Whole-farm systems modeling, stakeholder-informed requirements engineering"
+  outcomes: "Contributed to an industry-facing decision-support release; informed by stakeholder use-case design."
+  links: []
+
+- title: "Automated ration formulation within RuFaS"
+  theme: modeling
+  role: "Lead"
+  description: >
+    Built automated ration-formulation logic for lactating cows within RuFaS
+    and compared outcomes across different nutrient requirement models,
+    showing that model choice measurably changes predicted diets and
+    emissions estimates.
+  methods: "Ration optimization, nutrient requirement modeling, RuFaS"
+  outcomes: "Presented at the Canadian Society of Animal Science meeting (2024)."
+  links:
+    - label: "Proceedings"
+      url: "https://doi.org/10.1139/cjas-2024-0024#subarticle-8"
+
+- title: "Customer discovery for agricultural decision-support tools"
+  theme: precision
+  role: "Fellow, Green Technology Innovation Fellows Program"
+  description: >
+    Conducted 50+ customer discovery interviews with dairy farmers, advisors,
+    and industry stakeholders — plus 30+ additional interviews at the
+    American Farm Bureau Convention — to identify barriers and opportunities
+    in farm decision-making, then presented findings on decision-support
+    solutions for agriculture.
+  methods: "Customer discovery interviews, stakeholder analysis, venture-style opportunity assessment"
+  outcomes: "6 presentations on customer discovery findings; informed design direction for decision-support tools."
+  links: []
+
+- title: "FFAR Fellow profile — Cornell Animal Science"
+  theme: precision
+  role: "Subject / FFAR Fellow (2023–2026)"
+  description: >
+    A Cornell Department of Animal Science StoryMap profiling Haowen Hu's path
+    as a Foundation for Food & Agriculture Research (FFAR) Fellow and his work
+    on whole-farm environmental modeling.
+  methods: ""
+  outcomes: ""
+  links:
+    - label: "View the StoryMap"
+      url: "https://storymaps.arcgis.com/stories/56b8a197a88c4189a1382ed367852f00"

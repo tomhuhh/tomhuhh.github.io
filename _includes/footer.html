@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-links">
+      <a href="mailto:{{ site.email }}">Email</a>
+      <a href="{{ site.scholar_url }}">Google Scholar</a>
+      <a href="{{ site.linkedin_url }}">LinkedIn</a>
+      <a href="{{ site.github_url }}">GitHub</a>
+      <a href="{{ site.cv_file | relative_url }}">CV (PDF)</a>
+    </div>
+    <p>&copy; {{ site.time | date: '%Y' }} Haowen Hu. Department of Animal Science, Cornell University, Ithaca, NY.</p>
+    <p class="small">Built with Jekyll, deployed on GitHub Pages. Site content last reviewed {{ site.cv_last_updated }}.</p>
+  </div>
+</footer>

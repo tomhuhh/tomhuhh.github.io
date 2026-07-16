@@ -1,0 +1,54 @@
+# Add new updates by copying a block below. Newest first.
+# IMPORTANT: only add items with a real, confirmed date — no placeholder dates.
+- date: "2026-06-09"
+  title: "Awarded the 2026 NMPF National Dairy Leadership Scholarship"
+  summary: >
+    The National Milk Producers Federation named Haowen one of five 2026
+    National Dairy Leadership Scholarship recipients, recognizing his
+    doctoral research on whole-farm environmental modeling in US dairy
+    systems through model evaluation and field-based refinement.
+  link_label: "Read the NMPF announcement"
+  link_url: "https://www.nmpf.org/nmpf-awards-2026-national-dairy-leadership-scholarship-winners/"
+
+- date: "2026-04"
+  title: "Presented ammonia-monitoring research at the EGU General Assembly"
+  summary: >
+    Presented high-temporal-resolution ammonia concentration measurements
+    from a naturally ventilated dairy barn, and how they inform RuFaS
+    housing-ammonia prediction refinement, at the European Geosciences
+    Union General Assembly in Vienna, Austria.
+  link_label: "View the abstract"
+  link_url: "https://doi.org/10.5194/egusphere-egu26-8438"
+
+- date: "2025-10-20"
+  title: "Featured in Hoards Dairyman on continued RuFaS refinement"
+  summary: >
+    Hoards Dairyman covered Haowen's work narrowing RuFaS refinement to the
+    animal and manure modules, including his comparison of RuFaS against
+    COMET-Farm, a greenhouse-gas accounting tool used by researchers and
+    policymakers.
+  link_label: "Read the article"
+  link_url: "https://hoards.com/article-37314-data-dependent-rufas-refinement-continues.html"
+
+- date: "2025-08-25"
+  title: "Published lead-author paper on RuFaS systems engineering"
+  summary: >
+    Published \"Transdisciplinary model-based systems engineering in the
+    development of the Ruminant Farm Systems model\" in Frontiers in
+    Sustainability, detailing the engineering process behind RuFaS.
+  link_label: "Read the paper"
+  link_url: "https://doi.org/10.3389/frsus.2025.1561453"
+
+# --- Placeholder: review before publishing --------------------------------
+# The item below is based on a LinkedIn post fragment ("passed my
+# comprehensive exams this Wednesday April 16th"). The exact year could not
+# be confirmed from public search results — please confirm the year (likely
+# 2025) before this goes live, or remove it.
+- date: "2025-04-16"
+  title: "Passed Ph.D. comprehensive exams"
+  summary: >
+    Haowen passed his Ph.D. comprehensive exams at Cornell, a milestone
+    toward his expected December 2026 completion.
+  link_label: ""
+  link_url: ""
+  needs_review: true

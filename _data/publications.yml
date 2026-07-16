@@ -1,0 +1,78 @@
+# Add new publications by copying a block below. Newest first within each group.
+# group: journal | review | preparation | conference
+journal:
+  - authors: "Hu, H., Oliver, J. P., Niu, P., Leytem, A. B., & Reed, K. F."
+    year: 2026
+    title: "Assessing precision and accuracy of manure volatile solids, total nitrogen, and total ammoniacal nitrogen analyses across 6 commercial laboratories."
+    venue: "Journal of Dairy Science Communications, 7(4), 487–493."
+    doi: "https://doi.org/10.3168/jdsc.2025-1007"
+
+  - authors: "Sharma, S., Liu, E., van Leerdam, M., Hu, H., Villalobos-Barquero, R., Dorea, J. R. R., Cabrera, V. E., Iwersen, M., Bewley, J. M., Soyeurt, H., & Hostens, M."
+    year: 2026
+    title: "Invited review: Milking the data for value-driven dairy farming."
+    venue: "Journal of Dairy Science, 109(4), 3137–3157."
+    doi: "https://doi.org/10.3168/jds.2025-27011"
+
+  - authors: "Reed, K. F., Tricarico, J. M., HekmatiAthar, S., Waddell, J. S., Andreen, D. A., Briggs, K. R., Liu, A., Tomlinson, N. D., Adamchick, J., Cabrera, V. E., Hu, H., Gong, Y., Graef, G. M., Villalobos-Barquero, M. R., Oliver, J. P., Nydam, D. V., Ayache, N., & McClintock, L."
+    year: 2025
+    title: "Invited review: The Ruminant Farm Systems (RuFaS) model is a platform to support future research and actions for sustainable dairy farming."
+    venue: "Journal of Dairy Science Communications, 6(Suppl. 1), S15–S22."
+    doi: "https://doi.org/10.3168/jdsc.2025-0861"
+
+  - authors: "Hu, H., Whitcomb, C. A., Ploetz, T. E., & Reed, K. F."
+    year: 2025
+    title: "Transdisciplinary model-based systems engineering in the development of the Ruminant Farm Systems model."
+    venue: "Frontiers in Sustainability, 6, 1561453."
+    doi: "https://doi.org/10.3389/frsus.2025.1561453"
+
+  - authors: "Gong, Y., Hu, H., Reed, K. F., & Cabrera, V. E."
+    year: 2025
+    title: "Advancing dairy farm simulations: A 2-step approach for tailored lactation curve estimation and its systemic impacts."
+    venue: "Journal of Dairy Science, 108(9), 9681–9695."
+    doi: "https://doi.org/10.3168/jds.2025-26334"
+
+  - authors: "Cabrera, V. E., Bewley, J., Breunig, M., Breunig, T., Cooley, W., De Vries, A., Fourdraine, R., Giordano, J. O., Gong, Y., Greenfield, R., Hu, H., Lenkaitis, A., Niu, M., Noronha, E. A. F., & Sullivan, M."
+    year: 2025
+    title: "Data integration and analytics in the dairy industry: Challenges and pathways forward."
+    venue: "Animals, 15(3), 329."
+    doi: "https://doi.org/10.3390/ani15030329"
+
+preparation:
+  - authors: "Qian, C., Jung, Y., Hu, H., Gong, Y., Negreiro, A. N., Cabrera, V. E., Ivanek, R., & Wiedmann, M."
+    year: 2026
+    title: "Future-proofing agricultural research: FAIR principles for Agriculture AI Agents (FAIR4AG2)."
+    venue: "Frontiers in Artificial Intelligence – AI in Food, Agriculture and Water."
+    status: "Under review"
+    doi: ""
+
+  - authors: "Hu, H., Briggs, K. R., Adamchick, J., Andreen, D. A., Waddell, J. S., HekmatiAthar, S., Gong, Y., Graef, G. M., Villalobos-Barquero, M. R., Ivanek, R., Whitcomb, C. A., Cabrera, V. E., Overton, T. R., Tricarico, J. M., & Reed, K. F."
+    year: null
+    title: "A methodological comparison of COMET-Farm and RuFaS in estimating greenhouse gas emissions from animal and manure management on 5 US Holstein dairies."
+    venue: "In preparation. Planned submission: August 2026."
+    status: "In preparation"
+    doi: ""
+
+conference:
+  - authors: "Hu, H., Ge, X., Zhu, R., Fang, N., Cabrera, V. E., & Reed, K. F."
+    year: 2026
+    title: "Markov-chain herd simulation quantifies the economic feasibility of 3-nitrooxypropanol and bromoform-containing additives for enteric methane mitigation."
+    venue: "Animal Science Modellers' Group Annual Meeting, Milwaukee, WI. Presented."
+    doi: ""
+
+  - authors: "Hu, H., Perez, M., Oliver, J., Jacome, A., Scattolini, F., Giordano, J., & Reed, K."
+    year: 2026
+    title: "High-temporal-resolution ammonia concentration measurements in a naturally ventilated dairy barn to inform RuFaS housing ammonia prediction refinement."
+    venue: "European Geosciences Union General Assembly, Vienna, Austria. Presented."
+    doi: "https://doi.org/10.5194/egusphere-egu26-8438"
+
+  - authors: "Hu, H., Xu, H., Luo, Y., & Reed, K. F."
+    year: 2025
+    title: "Evaluating the RuFaS model: Insights into NH3 emission simulation via data assimilation."
+    venue: "American Dairy Science Association Annual Meeting, Louisville, KY. Presented."
+    doi: ""
+
+  - authors: "Hu, H., Waddell, J., Cabezas-Garcia, E. H., & Reed, K. F."
+    year: 2024
+    title: "Automated ration formulation for lactating cows within the Ruminant Farm Systems model results in different diets and emissions estimates when using different nutrient requirement models."
+    venue: "Canadian Journal of Animal Science, 104(Suppl. 1), S1–S7. Presented."
+    doi: "https://doi.org/10.1139/cjas-2024-0024#subarticle-8"
