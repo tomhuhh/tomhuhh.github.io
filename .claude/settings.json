@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bundle exec *)",
+      "Bash(echo \"---BUILD EXIT: $?---\")",
+      "Bash(bundle install *)",
+      "Bash(git rm *)",
+      "Bash(grep -rn --include=\"*.html\" --include=\"*.svg\" -E \"#[0-9A-Fa-f]{3,6}\\\\b\" /Users/haowenhu/Documents/GitHub/tomhuhh.github.io --exclude-dir=_site)",
+      "Bash(python3 -)",
+      "Bash(grep -n \"#[0-9A-Fa-f]\\\\{3,6\\\\}\" assets/css/style.css)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -c \"s=open\\('assets/css/style.css'\\).read\\(\\); print\\('open',s.count\\('{'\\),'close',s.count\\('}'\\), '✓' if s.count\\('{'\\)==s.count\\('}'\\) else 'MISMATCH'\\)\")",
+      "Bash(cat)",
+      "Bash(git add *)",
+      "Bash(git reset *)",
+      "Bash(git commit *)",
+      "Bash(rm -f .git/COMMIT_EDITMSG_TMP)",
+      "Bash(ruby -v)",
+      "Bash(brew list *)",
+      "Read(//opt/homebrew/opt/ruby/bin/**)",
+      "Bash(command -v rbenv)"
+    ]
+  }
+}
