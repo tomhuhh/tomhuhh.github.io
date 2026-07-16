@@ -26,8 +26,8 @@ assets/
   css/style.css      All styling and design tokens (colors, spacing, fonts).
   js/main.js         Small script for the mobile nav toggle.
   img/               favicon.svg, og-image.png (placeholder), headshot (add yours).
-  files/             Haowen-Hu-CV.pdf — replace this file to update the CV;
-                      the download button and filename stay the same.
+  (no CV file — the CV is intentionally not published on the site; share
+   it directly with people who ask, e.g. by email)
 ```
 
 ## Common edits (no HTML needed)
@@ -45,15 +45,9 @@ use a real date. Don't invent a date — leave it out or ask before guessing.
 
 **Add an award** → open `_data/awards.yml`, copy a block.
 
-**Update your CV** → replace `assets/files/Haowen-Hu-CV.pdf` with your new
-PDF **using the same filename**, and update `cv_last_updated` in
-`_config.yml`.
-
-**Add your headshot** → add an image at `assets/img/headshot.jpg`, then in
-`index.html` replace the `.headshot-placeholder` block with:
-```html
-<img src="{{ '/assets/img/headshot.jpg' | relative_url }}" alt="Photo of Haowen Hu">
-```
+**Add/update your headshot** → just replace the file at
+`assets/img/headshot.jpg` (the homepage already points here — no other
+edit needed).
 
 **Change colors/fonts** → all design tokens are CSS variables at the top of
 `assets/css/style.css` (`:root { ... }`).
