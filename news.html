@@ -22,12 +22,11 @@ permalink: /news.html
       {% endfor %}
     </ul>
 
-    <div class="placeholder-note">
-      To add an update later: open <code>_data/news.yml</code> and copy an
-      existing block at the top. Use a real date (<code>YYYY-MM-DD</code> or
-      <code>YYYY-MM</code>) — don't invent one. One item above is flagged
-      <code>needs_review: true</code> because its year came from a partial
-      LinkedIn snippet and should be confirmed before publishing.
-    </div>
+    {% comment %}
+      Author note (not rendered): to add an update, open _data/news.yml and copy
+      an existing block at the top. Use a real date (YYYY-MM-DD or YYYY-MM) — do
+      not invent one. Items flagged `needs_review: true` render a "Please verify"
+      badge and should be confirmed before publishing.
+    {% endcomment %}
   </div>
 </section>

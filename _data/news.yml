@@ -39,16 +39,10 @@
   link_label: "Read the paper"
   link_url: "https://doi.org/10.3389/frsus.2025.1561453"
 
-# --- Placeholder: review before publishing --------------------------------
-# The item below is based on a LinkedIn post fragment ("passed my
-# comprehensive exams this Wednesday April 16th"). The exact year could not
-# be confirmed from public search results — please confirm the year (likely
-# 2025) before this goes live, or remove it.
-- date: "2025-04-16"
-  title: "Passed Ph.D. comprehensive exams"
+- date: "2025-08-18"
+  title: "Advanced to Ph.D. candidacy"
   summary: >
-    Haowen passed his Ph.D. comprehensive exams at Cornell, a milestone
-    toward his expected December 2026 completion.
+    Haowen passed his Ph.D. A exam at Cornell and advanced to candidacy, a
+    milestone toward his expected December 2026 completion.
   link_label: ""
   link_url: ""
-  needs_review: true

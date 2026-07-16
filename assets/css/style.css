@@ -12,12 +12,42 @@
   --pasture-light: #EAF0EA;/* light tint of accent for chips/badges */
   --ochre:      #9A6423;   /* tertiary accent — used sparingly (awards, tags) */
   --line:       #DAD4C6;   /* hairline border/rule */
-  --white:      #FFFFFF;
+  --white:      #FFFFFF;   /* text on solid pasture surfaces (buttons, logo) */
 
-  --font: Arial, Helvetica, "Helvetica Neue", sans-serif;
+  /* Derived accent shades (kept as tokens so dark mode can retune them) */
+  --pasture-deep:   #264536;  /* pressed/hover state of the pasture accent */
+  --pasture-line:   #cfe0d3;  /* border around pasture-light surfaces */
+  --on-pasture-soft:#DDE9E1;  /* muted text sitting on solid pasture */
+  --badge-review-bg:#f4ecdd;  /* "in review" badge background */
+
+  --font-serif: "Source Serif 4", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --font-sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font: var(--font-sans);
 
   --maxw: 1120px;
   --radius: 3px;
+}
+
+/* ---------- Dark mode (system preference) ----------
+   Same identity, re-lit: deep green-charcoal ground, the pasture
+   accent lifted for AA contrast. All pairs verified >= 4.5:1. */
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:      #141A16;
+    --paper-alt:  #1A231D;
+    --ink:        #E8ECE8;
+    --slate:      #A8B5AD;
+    --pasture:    #8FC1A4;
+    --pasture-light: #22352A;
+    --ochre:      #D6A15F;
+    --line:       #2E3A32;
+    --white:      #14201A;   /* dark text on the now-light pasture accent */
+
+    --pasture-deep:   #A6CFB6;
+    --pasture-line:   #3B5747;
+    --on-pasture-soft:#1E3226;
+    --badge-review-bg:#3A2F1D;
+  }
 }
 
 *{ box-sizing: border-box; }
@@ -31,6 +61,12 @@ body{
   line-height: 1.6;
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Headings take the serif; body, nav, labels and UI stay sans */
+h1, h2, .section-title, .card h3, .timeline-item h3, .hero h1, .brand-name{
+  font-family: var(--font-serif);
+  font-weight: 600;
 }
 
 img{ max-width:100%; display:block; }
@@ -166,7 +202,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .btn:hover{ background:var(--ink); color:var(--paper); text-decoration:none; }
 .btn.primary{ background:var(--pasture); border-color:var(--pasture); color:var(--white); }
-.btn.primary:hover{ background:#264536; border-color:#264536; }
+.btn.primary:hover{ background:var(--pasture-deep); border-color:var(--pasture-deep); }
 
 .hero-figure{
   border:1px solid var(--line); background:var(--paper-alt);
@@ -198,7 +234,7 @@ h2.section-title{
 .chips{ display:flex; flex-wrap:wrap; gap:10px; margin: 0 0 8px; padding:0; list-style:none; }
 .chip{
   background:var(--pasture-light); color:var(--pasture);
-  border:1px solid #cfe0d3;
+  border:1px solid var(--pasture-line);
   padding:7px 14px; border-radius:999px; font-size:.85rem; font-weight:bold;
 }
 
@@ -238,7 +274,7 @@ h2.section-title{
   letter-spacing:.05em; padding:3px 9px; border-radius:999px; margin-left:8px;
   background:var(--pasture-light); color:var(--pasture); vertical-align:middle;
 }
-.status-badge.review{ background:#f4ecdd; color:var(--ochre); }
+.status-badge.review{ background:var(--badge-review-bg); color:var(--ochre); }
 
 /* ============================================================
    Timeline (news)
@@ -268,10 +304,6 @@ h2.section-title{
 /* ============================================================
    Utilities
    ============================================================ */
-.placeholder-note{
-  background:#FBF3E4; border:1px solid #E7D5AE; color:#6B4A16;
-  padding:12px 16px; border-radius:var(--radius); font-size:.88rem; margin:16px 0;
-}
 .small{ font-size:.85rem; color:var(--slate); }
 .center{ text-align:center; }
 .stack{ display:flex; flex-direction:column; gap:6px; }
