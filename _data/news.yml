@@ -1,5 +1,7 @@
 # Add new updates by copying a block below. Newest first.
 # IMPORTANT: only add items with a real, confirmed date — no placeholder dates.
+# SCOPE: this is a recent-activity feed — keep roughly the last ~2 years and
+# prune older items. Press coverage about Haowen lives on the Media page, not here.
 - date: "2026-06-09"
   title: "Awarded the 2026 NMPF National Dairy Leadership Scholarship"
   summary: >
@@ -20,15 +22,17 @@
   link_label: "View the abstract"
   link_url: "https://doi.org/10.5194/egusphere-egu26-8438"
 
-- date: "2025-10-20"
-  title: "Featured in Hoards Dairyman on continued RuFaS refinement"
+- date: "2026-06"
+  title: "Published lead-author paper on interlaboratory manure analysis"
   summary: >
-    Hoards Dairyman covered Haowen's work narrowing RuFaS refinement to the
-    animal and manure modules, including his comparison of RuFaS against
-    COMET-Farm, a greenhouse-gas accounting tool used by researchers and
-    policymakers.
-  link_label: "Read the article"
-  link_url: "https://hoards.com/article-37314-data-dependent-rufas-refinement-continues.html"
+    Published \"Assessing precision and accuracy of manure volatile solids,
+    total nitrogen, and total ammoniacal nitrogen analyses across 6 commercial
+    laboratories\" in Journal of Dairy Science Communications, quantifying
+    measurement variability that propagates into farm nutrient and emissions
+    accounting.
+  link_label: "Read the paper"
+  link_url: "https://doi.org/10.3168/jdsc.2025-1007"
+  needs_review: true
 
 - date: "2025-08-25"
   title: "Published lead-author paper on RuFaS systems engineering"
