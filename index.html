@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Home
-description: "Haowen Hu is a Ph.D. candidate in Animal Science at Cornell University researching whole-farm environmental modeling, dairy sustainability, and the RuFaS model."
+description: "Haowen Hu is a Ph.D. candidate in Animal Science at Cornell University researching whole-farm
+environmental modeling, dairy sustainability, and the RuFaS model."
 permalink: /
 ---
 
@@ -10,10 +11,13 @@ permalink: /
     <div>
       <p class="eyebrow">Ph.D. Candidate · Department of Animal Science · Cornell University</p>
       <h1>Haowen Hu</h1>
-      <p class="headline">Tools that help dairy systems measure, model, and improve their environmental footprint — from barn sensors to whole-farm simulation.</p>
+      <p class="headline">Tools that help dairy systems measure, model, and improve their environmental footprint — from
+        barn sensors to whole-farm simulation.</p>
       <p>
         I research whole-farm environmental and systems modeling for US dairy production, focused
-        on the <strong>Ruminant Farm Systems (RuFaS)</strong> model: quantifying ammonia and
+        on the
+        <strong><a href="https://github.com/RuminantFarmSystems/RuFaS">Ruminant Farm Systems (RuFaS)</a></strong>
+        model: quantifying ammonia and
         greenhouse-gas emissions, refining models with field sensor data, and building
         decision-support tools farmers and advisors can use.
       </p>
@@ -25,7 +29,8 @@ permalink: /
       </div>
     </div>
     <div class="hero-figure">
-      <img src="{{ '/assets/img/headshot.jpg' | relative_url }}" alt="Photo of Haowen Hu" style="border-radius:var(--radius); width:100%;">
+      <img src="{{ '/assets/img/headshot.jpg' | relative_url }}" alt="Photo of Haowen Hu"
+        style="border-radius:var(--radius); width:100%;">
     </div>
   </div>
 </section>
@@ -36,41 +41,49 @@ permalink: /
     <h2 class="section-title">From the barn to the model</h2>
     <p class="section-sub">How one research thread runs end to end.</p>
 
-    <svg class="model-diagram" viewBox="0 0 980 190" role="img" aria-labelledby="diagramTitle diagramDesc" xmlns="http://www.w3.org/2000/svg">
+    <svg class="model-diagram" viewBox="0 0 980 190" role="img" aria-labelledby="diagramTitle diagramDesc"
+      xmlns="http://www.w3.org/2000/svg">
       <title id="diagramTitle">Research workflow diagram</title>
-      <desc id="diagramDesc">Barn sensors feed field data into data assimilation, which refines the RuFaS model, which informs farm decisions on emissions and management.</desc>
+      <desc id="diagramDesc">Barn sensors feed field data into data assimilation, which refines the RuFaS model, which
+        informs farm decisions on emissions and management.</desc>
       <g font-family="Arial, sans-serif">
         <!-- nodes -->
         <g>
-          <rect x="10" y="55" width="200" height="80" rx="4" fill="var(--paper)" stroke="var(--line)"/>
-          <text x="110" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--ink)">Barn sensors</text>
+          <rect x="10" y="55" width="200" height="80" rx="4" fill="var(--paper)" stroke="var(--line)" />
+          <text x="110" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--ink)">Barn
+            sensors</text>
           <text x="110" y="108" text-anchor="middle" font-size="12" fill="var(--slate)">gas + ventilation flux</text>
         </g>
         <g>
-          <rect x="270" y="55" width="200" height="80" rx="4" fill="var(--pasture-light)" stroke="var(--pasture-line)"/>
-          <text x="370" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--pasture)">Data assimilation</text>
+          <rect x="270" y="55" width="200" height="80" rx="4" fill="var(--pasture-light)"
+            stroke="var(--pasture-line)" />
+          <text x="370" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--pasture)">Data
+            assimilation</text>
           <text x="370" y="108" text-anchor="middle" font-size="12" fill="var(--slate)">field data → parameters</text>
         </g>
         <g>
-          <rect x="530" y="55" width="200" height="80" rx="4" fill="var(--paper)" stroke="var(--line)"/>
-          <text x="630" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--ink)">RuFaS model</text>
+          <rect x="530" y="55" width="200" height="80" rx="4" fill="var(--paper)" stroke="var(--line)" />
+          <text x="630" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--ink)">RuFaS
+            model</text>
           <text x="630" y="108" text-anchor="middle" font-size="12" fill="var(--slate)">whole-farm simulation</text>
         </g>
         <g>
-          <rect x="770" y="55" width="200" height="80" rx="4" fill="var(--pasture)" stroke="var(--pasture)"/>
-          <text x="870" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--paper)">Farm decisions</text>
-          <text x="870" y="108" text-anchor="middle" font-size="12" fill="var(--on-pasture-soft)">emissions · cost · welfare</text>
+          <rect x="770" y="55" width="200" height="80" rx="4" fill="var(--pasture)" stroke="var(--pasture)" />
+          <text x="870" y="88" text-anchor="middle" font-size="15" font-weight="bold" fill="var(--paper)">Farm
+            decisions</text>
+          <text x="870" y="108" text-anchor="middle" font-size="12" fill="var(--on-pasture-soft)">emissions · cost ·
+            welfare</text>
         </g>
         <!-- arrows -->
         <g stroke="var(--slate)" stroke-width="2" fill="none" marker-end="url(#arrow)">
-          <line x1="212" y1="95" x2="266" y2="95"/>
-          <line x1="472" y1="95" x2="526" y2="95"/>
-          <line x1="732" y1="95" x2="766" y2="95"/>
+          <line x1="212" y1="95" x2="266" y2="95" />
+          <line x1="472" y1="95" x2="526" y2="95" />
+          <line x1="732" y1="95" x2="766" y2="95" />
         </g>
       </g>
       <defs>
         <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-          <path d="M0,0 L8,4 L0,8 Z" fill="var(--slate)"/>
+          <path d="M0,0 L8,4 L0,8 Z" fill="var(--slate)" />
         </marker>
       </defs>
     </svg>
@@ -100,17 +113,20 @@ permalink: /
       <div class="card">
         <p class="meta">Current focus</p>
         <h3>RuFaS × COMET-Farm comparison</h3>
-        <p>Comparing RuFaS against COMET-Farm to find what drives differing greenhouse-gas estimates across five US Holstein dairies — manuscript in preparation, planned submission August 2026.</p>
+        <p>Comparing RuFaS against COMET-Farm to find what drives differing greenhouse-gas estimates across five US
+          Holstein dairies — manuscript in preparation, planned submission August 2026.</p>
       </div>
       <div class="card">
         <p class="meta">Fellowship</p>
         <h3>FFAR Fellow, 2023–2026</h3>
-        <p>One of 30 fellows nationally in the Foundation for Food &amp; Agriculture Research fellowship, with 150+ hours of professional development in leadership, communication, and entrepreneurship.</p>
+        <p>One of 30 fellows nationally in the Foundation for Food &amp; Agriculture Research fellowship, with 150+
+          hours of professional development in leadership, communication, and entrepreneurship.</p>
       </div>
       <div class="card">
         <p class="meta">Recognition</p>
         <h3>2026 NMPF Dairy Leadership Scholarship</h3>
-        <p>Awarded by the National Milk Producers Federation for doctoral research advancing whole-farm environmental modeling in US dairy systems.</p>
+        <p>Awarded by the National Milk Producers Federation for doctoral research advancing whole-farm environmental
+          modeling in US dairy systems.</p>
         <a href="{{ '/media.html' | relative_url }}">Read more →</a>
       </div>
     </div>
