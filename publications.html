@@ -8,10 +8,9 @@ permalink: /publications.html
   <div class="wrap">
     <p class="eyebrow">Publications</p>
     <h1 class="section-title">Publications & presentations</h1>
-    <p class="section-sub">
-      Grouped below by type. See also my
-      <a href="{{ site.scholar_url }}">Google Scholar profile</a> for citation
-      metrics and the most current list.
+    <p class="section-sub" style="max-width:none;">
+      A selected list, grouped by type. See my
+      <a href="{{ site.scholar_url }}">Google Scholar profile</a> for the complete record and citation metrics.
     </p>
 
     <div class="pub-group" id="journal">
@@ -22,7 +21,7 @@ permalink: /publications.html
           <span class="pub-num">{{ forloop.index }}.</span>
           <div>
             <p class="pub-title">{{ pub.title }}</p>
-            <p class="pub-cite">{{ pub.authors }} {{ pub.year }}. {{ pub.venue }}</p>
+            <p class="pub-cite">{{ pub.authors | replace: "Hu, H.", "<strong class='pub-me'>Hu, H.</strong>" }} {{ pub.year }}. {{ pub.venue }}</p>
             <p class="pub-links">
               {% if pub.doi and pub.doi != "" %}<a href="{{ pub.doi }}">DOI / full text</a>{% endif %}
               <a href="{{ site.scholar_url }}">Google Scholar</a>
@@ -41,7 +40,7 @@ permalink: /publications.html
           <span class="pub-num">{{ forloop.index }}.</span>
           <div>
             <p class="pub-title">{{ pub.title }} <span class="status-badge review">{{ pub.status }}</span></p>
-            <p class="pub-cite">{{ pub.authors }}{% if pub.year %} {{ pub.year }}.{% endif %} {{ pub.venue }}</p>
+            <p class="pub-cite">{{ pub.authors | replace: "Hu, H.", "<strong class='pub-me'>Hu, H.</strong>" }}{% if pub.year %} {{ pub.year }}.{% endif %} {{ pub.venue }}</p>
           </div>
         </li>
         {% endfor %}
@@ -56,7 +55,7 @@ permalink: /publications.html
           <span class="pub-num">{{ forloop.index }}.</span>
           <div>
             <p class="pub-title">{{ pub.title }}</p>
-            <p class="pub-cite">{{ pub.authors }} {{ pub.year }}. {{ pub.venue }}</p>
+            <p class="pub-cite">{{ pub.authors | replace: "Hu, H.", "<strong class='pub-me'>Hu, H.</strong>" }} {{ pub.year }}. {{ pub.venue }}</p>
             {% if pub.doi and pub.doi != "" %}<p class="pub-links"><a href="{{ pub.doi }}">Link</a></p>{% endif %}
           </div>
         </li>

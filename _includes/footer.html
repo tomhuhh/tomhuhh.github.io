@@ -1,10 +1,10 @@
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-links">
-      <a href="mailto:{{ site.email }}">Email</a>
-      <a href="{{ site.scholar_url }}">Google Scholar</a>
-      <a href="{{ site.linkedin_url }}">LinkedIn</a>
-      <a href="{{ site.github_url }}">GitHub</a>
+      <a href="mailto:{{ site.email }}" aria-label="Email" title="Email">{% include icon.html name="email" %}</a>
+      <a href="{{ site.scholar_url }}" aria-label="Google Scholar" title="Google Scholar">{% include icon.html name="scholar" %}</a>
+      <a href="{{ site.linkedin_url }}" aria-label="LinkedIn" title="LinkedIn">{% include icon.html name="linkedin" %}</a>
+      <a href="{{ site.github_url }}" aria-label="GitHub" title="GitHub">{% include icon.html name="github" %}</a>
     </div>
     <p>&copy; {{ site.time | date: '%Y' }} Haowen Hu. Department of Animal Science, Cornell University, Ithaca, NY.</p>
     <p class="small">Built with Jekyll, deployed on GitHub Pages. Site content last reviewed {{ site.cv_last_updated }}.</p>

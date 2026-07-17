@@ -14,23 +14,23 @@ permalink: /contact.html
       modeling, or agricultural data science.
     </p>
 
-    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); margin-top:28px;">
-      <div class="card">
-        <p class="meta">Email</p>
-        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-      </div>
-      <div class="card">
-        <p class="meta">LinkedIn</p>
-        <p><a href="{{ site.linkedin_url }}">Connect on LinkedIn</a></p>
-      </div>
-      <div class="card">
-        <p class="meta">Google Scholar</p>
-        <p><a href="{{ site.scholar_url }}">View publications</a></p>
-      </div>
-      <div class="card">
-        <p class="meta">GitHub</p>
-        <p><a href="{{ site.github_url }}">See my repositories</a></p>
-      </div>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); margin-top:28px;">
+      <a class="card contact-card" href="mailto:{{ site.email }}">
+        {% include icon.html name="email" %}
+        <span><span class="contact-label">Email</span><br><span class="contact-sub">{{ site.email }}</span></span>
+      </a>
+      <a class="card contact-card" href="{{ site.linkedin_url }}">
+        {% include icon.html name="linkedin" %}
+        <span><span class="contact-label">LinkedIn</span><br><span class="contact-sub">Connect on LinkedIn</span></span>
+      </a>
+      <a class="card contact-card" href="{{ site.scholar_url }}">
+        {% include icon.html name="scholar" %}
+        <span><span class="contact-label">Google Scholar</span><br><span class="contact-sub">View publications</span></span>
+      </a>
+      <a class="card contact-card" href="{{ site.github_url }}">
+        {% include icon.html name="github" %}
+        <span><span class="contact-label">GitHub</span><br><span class="contact-sub">See my repositories</span></span>
+      </a>
     </div>
 
     <p class="small" style="margin-top:28px;">
