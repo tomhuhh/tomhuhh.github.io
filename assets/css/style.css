@@ -247,6 +247,14 @@ h2.section-title{
   border:1px solid var(--line); background:var(--paper);
   border-radius:var(--radius); padding:22px;
 }
+/* Full-bleed thumbnail at the top of a card */
+.card-thumb{
+  width:calc(100% + 44px);
+  margin:-22px -22px 16px;
+  height:180px; object-fit:cover;
+  border-bottom:1px solid var(--line);
+  border-radius:var(--radius) var(--radius) 0 0;
+}
 .card h3{ margin:0 0 8px; font-size:1.08rem; }
 .card p{ margin:0 0 10px; color:var(--slate); }
 .card .meta{ font-size:.82rem; color:var(--ochre); font-weight:bold; text-transform:uppercase; letter-spacing:.06em; margin-bottom:10px; }
