@@ -1,73 +1,20 @@
 ---
-layout: default
-title: Publications
-description: "Peer-reviewed publications, manuscripts in preparation, and conference presentations by Haowen Hu."
 permalink: /publications.html
+sitemap: false
 ---
-<section>
-  <div class="wrap">
-    <p class="eyebrow">Publications</p>
-    <h1 class="section-title">Publications & presentations</h1>
-    <p class="section-sub" style="max-width:none;">
-      A selected list, grouped by type. See my
-      <a href="{{ site.scholar_url }}">Google Scholar profile</a> for the complete record and citation metrics.
-    </p>
-
-    <div class="pub-group" id="journal">
-      <h2>Peer-reviewed journal articles</h2>
-      <ol class="pub-list">
-        {% for pub in site.data.publications.journal %}
-        <li class="pub-item">
-          <span class="pub-num">{{ forloop.index }}.</span>
-          <div>
-            <p class="pub-title">{{ pub.title }}</p>
-            <p class="pub-cite">{{ pub.authors | replace: "Hu, H.", "<strong class='pub-me'>Hu, H.</strong>" }} {{ pub.year }}. {{ pub.venue }}</p>
-            <p class="pub-links">
-              {% if pub.doi and pub.doi != "" %}<a href="{{ pub.doi }}">DOI / full text</a>{% endif %}
-              <a href="{{ site.scholar_url }}">Google Scholar</a>
-            </p>
-          </div>
-        </li>
-        {% endfor %}
-      </ol>
-    </div>
-
-    <div class="pub-group" id="preparation">
-      <h2>Manuscripts under review or in preparation</h2>
-      <ol class="pub-list">
-        {% for pub in site.data.publications.preparation %}
-        <li class="pub-item">
-          <span class="pub-num">{{ forloop.index }}.</span>
-          <div>
-            <p class="pub-title">{{ pub.title }} <span class="status-badge review">{{ pub.status }}</span></p>
-            <p class="pub-cite">{{ pub.authors | replace: "Hu, H.", "<strong class='pub-me'>Hu, H.</strong>" }}{% if pub.year %} {{ pub.year }}.{% endif %} {{ pub.venue }}</p>
-          </div>
-        </li>
-        {% endfor %}
-      </ol>
-    </div>
-
-    <div class="pub-group" id="conference">
-      <h2>Conference abstracts & proceedings</h2>
-      <ol class="pub-list">
-        {% for pub in site.data.publications.conference %}
-        <li class="pub-item">
-          <span class="pub-num">{{ forloop.index }}.</span>
-          <div>
-            <p class="pub-title">{{ pub.title }}</p>
-            <p class="pub-cite">{{ pub.authors | replace: "Hu, H.", "<strong class='pub-me'>Hu, H.</strong>" }} {{ pub.year }}. {{ pub.venue }}</p>
-            {% if pub.doi and pub.doi != "" %}<p class="pub-links"><a href="{{ pub.doi }}">Link</a></p>{% endif %}
-          </div>
-        </li>
-        {% endfor %}
-      </ol>
-    </div>
-
-    {% comment %}
-      Author note (not rendered): to add a publication, open
-      _data/publications.yml, copy an existing entry under the right group
-      (journal, preparation, or conference), and edit the fields. No HTML editing
-      required.
-    {% endcomment %}
-  </div>
-</section>
+<!-- The Publications page was merged into Research. This stub forwards old links. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="{{ '/research.html' | absolute_url }}">
+  <meta http-equiv="refresh" content="0; url={{ '/research.html' | relative_url }}">
+  <title>Redirecting to Research</title>
+</head>
+<body>
+  <p>The publications list now lives on the
+  <a href="{{ '/research.html' | relative_url }}">Research page</a>, with the full
+  record on <a href="{{ site.scholar_url }}">Google Scholar</a>.</p>
+</body>
+</html>

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Research
-description: "Haowen Hu's research themes: whole-farm systems modeling, dairy sustainability and GHG emissions, ammonia and manure management, precision livestock, and AI in agriculture."
+description: "Haowen Hu's research themes: whole-farm systems modeling, dairy sustainability and GHG emissions, ammonia and manure management, and AI in agriculture."
 permalink: /research.html
 ---
 <section>
@@ -11,7 +11,9 @@ permalink: /research.html
     <p class="section-sub">
       My work sits under one umbrella &mdash; whole-farm environmental modeling
       for dairy systems &mdash; organized into the themes below. Each project
-      links to its publication, presentation, or external resource.
+      links to its publication, presentation, or external resource. For the
+      complete list of publications and citation metrics, see my
+      <a href="{{ site.scholar_url }}">Google Scholar profile</a>.
     </p>
 
     <h2 class="section-title" style="font-size:1.3rem;">Whole-farm environmental & systems modeling</h2>
@@ -19,6 +21,7 @@ permalink: /research.html
       {% assign items = site.data.projects | where: "theme", "modeling" %}
       {% for p in items %}
       <div class="card">
+        {% if p.image and p.image != "" %}<img class="card-fig" src="{{ '/assets/img/' | append: p.image | relative_url }}" alt="Graphical abstract: {{ p.title }}" loading="lazy">{% endif %}
         <p class="meta">{{ p.role }}</p>
         <h3>{{ p.title }}</h3>
         <p>{{ p.description }}</p>
@@ -34,21 +37,7 @@ permalink: /research.html
       {% assign items = site.data.projects | where: "theme", "ammonia" %}
       {% for p in items %}
       <div class="card">
-        <p class="meta">{{ p.role }}</p>
-        <h3>{{ p.title }}</h3>
-        <p>{{ p.description }}</p>
-        {% if p.methods and p.methods != "" %}<p class="small"><strong>Methods:</strong> {{ p.methods }}</p>{% endif %}
-        {% if p.outcomes and p.outcomes != "" %}<p class="small"><strong>Outcomes:</strong> {{ p.outcomes }}</p>{% endif %}
-        {% for l in p.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% unless forloop.last %} &nbsp;·&nbsp; {% endunless %}{% endfor %}
-      </div>
-      {% endfor %}
-    </div>
-
-    <h2 class="section-title" style="font-size:1.3rem; margin-top:48px;">Precision livestock & agricultural data science</h2>
-    <div class="grid">
-      {% assign items = site.data.projects | where: "theme", "precision" %}
-      {% for p in items %}
-      <div class="card">
+        {% if p.image and p.image != "" %}<img class="card-fig" src="{{ '/assets/img/' | append: p.image | relative_url }}" alt="Graphical abstract: {{ p.title }}" loading="lazy">{% endif %}
         <p class="meta">{{ p.role }}</p>
         <h3>{{ p.title }}</h3>
         <p>{{ p.description }}</p>
@@ -62,6 +51,7 @@ permalink: /research.html
     <h2 class="section-title" style="font-size:1.3rem; margin-top:48px;">AI, LLMs & agent-based workflows in agriculture</h2>
     <div class="grid">
       <div class="card">
+        <img class="card-fig" src="{{ '/assets/img/fair-for-ag-agent.png' | relative_url }}" alt="Graphical abstract: FAIR principles for agricultural AI agents" loading="lazy">
         <p class="meta">Emerging direction</p>
         <h3>FAIR principles for agricultural AI agents</h3>
         <p>Co-author on "Future-proofing agricultural research: FAIR principles for Agriculture AI Agents (FAIR4AG2)," under review at Frontiers in Artificial Intelligence.</p>

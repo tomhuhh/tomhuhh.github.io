@@ -14,12 +14,13 @@ _config.yml         Site-wide settings: title, email, Scholar/LinkedIn/GitHub
 _layouts/default.html   The single page wrapper (header + footer + <head>).
 _includes/           head.html, header.html (nav), footer.html.
 _data/               <- MOST CONTENT UPDATES HAPPEN HERE
-  publications.yml   Journal articles, in-prep manuscripts, conference abstracts.
-  projects.yml       Research project cards (used on Projects and Research pages).
+  publications.yml   Legacy data (page merged into Research; kept for reference).
+  projects.yml       Research project cards, incl. optional `image` graphical abstract.
   news.yml           Dated timeline entries for the News & Updates page.
   awards.yml         Honors and awards list (Media & Recognition page).
-index.html, about.html, research.html, publications.html, projects.html,
+index.html, about.html, research.html, teaching.html,
 news.html, media.html, cv.html, contact.html, 404.html
+(publications.html is a redirect stub → research.html)
                      One file per page. Mostly static prose + Liquid loops
                      over the _data files above.
 assets/
@@ -32,9 +33,9 @@ assets/
 
 ## Common edits (no HTML needed)
 
-**Add a publication** → open `_data/publications.yml`, copy an existing
-entry under `journal`, `preparation`, or `conference`, and fill in the
-fields.
+**Add a publication** → the full list lives on Google Scholar (linked from
+Research). To surface a paper on the site, add/edit its project in
+`_data/projects.yml` and give it a `links` entry (and optional `image`).
 
 **Add a project** → open `_data/projects.yml`, copy a block, set `theme` to
 `modeling`, `ammonia`, `precision`, or `ai` (this also places it in the

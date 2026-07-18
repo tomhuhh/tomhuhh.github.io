@@ -48,8 +48,10 @@ Wait ~1–2 min (watch the repo's **Actions** tab), then hard-refresh
 ```
 index.html            Home (hero, workflow SVG, interests, featured cards)
 about.html            About (first person)
-research.html         Research themes — cards generated from _data/projects.yml
-publications.html     Publications — generated from _data/publications.yml
+research.html         Research themes — cards from _data/projects.yml (each with an
+                      optional graphical-abstract image); links to Google Scholar
+                      for the full publication list
+publications.html     Redirect stub → research.html (page merged into Research)
 teaching.html         Teaching — guest lectures + TA courses (static lists)
 news.html             News feed — generated from _data/news.yml
 media.html            Media & recognition — press cards, FFAR StoryMap, honors
@@ -74,11 +76,15 @@ Most content lives in `_data/*.yml` — copy an existing block to add an item:
 - **News** (`news.yml`): reverse-chron activity feed. Use a **real** date
   (`YYYY-MM-DD` or `YYYY-MM`). Keep ~last 2 years; press coverage goes on Media,
   not here.
-- **Publications** (`publications.yml`): groups `journal`, `preparation`,
-  `conference`. The author name "Hu, H." is auto-highlighted (pasture green).
+- **Publications**: the full list lives on Google Scholar (linked from Research).
+  `publications.yml` is legacy data, no longer rendered. To feature a paper on
+  the site, give its project a `links` entry (see Projects). `/publications.html`
+  redirects to Research.
 - **Projects** (`projects.yml`): each has a `theme`
-  (`modeling` | `ammonia` | `precision` | `ai`) that files it into the matching
-  section of **Research**. There is no separate Projects page.
+  (`modeling` | `ammonia` | `ai`) that files it into the matching
+  section of **Research**, plus an optional `image` (a graphical abstract in
+  `assets/img/`, shown full-width atop the card via `.card-fig`). There is no
+  separate Projects page.
 - **Awards** (`awards.yml`): curated to ~5 "Selected honors". Extra awards are
   kept commented-out at the bottom of the file — uncomment to feature.
 
@@ -128,3 +134,8 @@ and used site-wide.
   others for faster loads.
 - **Teaching**: course lists are static in `teaching.html`; update there when
   new courses are added.
+- **Research graphical abstracts**: 4 of 7 projects have an `image`. Add
+  abstracts for the remaining projects (FARM ES v3, customer discovery, FFAR
+  StoryMap, FAIR4AG2) for visual consistency.
+- **AI theme**: currently a single under-review placeholder (FAIR4AG2). Add a
+  concrete AI/LLM project write-up when one is ready.
