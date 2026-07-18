@@ -1,16 +1,16 @@
 # Add new projects by copying a block below.
 # theme options used on research.html: modeling | ammonia | ai
 # image (optional): a graphical abstract in assets/img/ shown atop the card.
+# role convention: "Lead" or "Co-author".
 - title: "Field-based ammonia emission quantification"
   theme: ammonia
   image: "ammonia-sensor-measurement.jpg"
-  role: "Graduate Research Assistant (lead)"
+  role: "Lead"
   description: >
-    Leading field quantification of barn ammonia emissions using sensor
-    networks and ventilation-based flux methods at the Cornell CAST Farm of
-    the Future barns to build a high-temporal-resolution emissions dataset.
-  methods: "Gas sensor networks, wind-speed / ventilation-based flux estimation"
-  outcomes: "High-temporal-resolution ammonia emissions dataset; presented at EGU General Assembly 2026."
+    Quantifying barn ammonia emissions with sensor networks and
+    ventilation-based flux methods at Cornell's CAST Farm of the Future.
+  methods: "Gas sensor networks, ventilation-based flux estimation"
+  outcomes: "High-resolution ammonia dataset; presented at EGU General Assembly 2026 and ADSA 2026."
   links:
     - label: "EGU26 abstract"
       url: "https://doi.org/10.5194/egusphere-egu26-8438"
@@ -18,13 +18,12 @@
 - title: "Data assimilation of simulated ammonia measurements into RuFaS"
   theme: ammonia
   image: "ammonia-data-assimilation.jpg"
-  role: "Graduate Research Assistant (lead)"
+  role: "Lead"
   description: >
-    Assimilating simulated ammonia emissions into the Ruminant Farm
-    Systems (RuFaS) model to refine its housing-emission parameters and
-    improve the accuracy of predicted farm-scale ammonia losses.
+    Assimilating simulated ammonia emissions into the Ruminant Farm Systems
+    (RuFaS) model to refine its housing-emission parameters.
   methods: "Data assimilation, parameter refinement, RuFaS"
-  outcomes: "Refined RuFaS housing-emission predictions; presented at ADSA 2025."
+  outcomes: "Developed algorithms to refine RuFaS housing emission predictions; presented at ADSA 2025."
   links:
     - label: "ADSA 2025 abstract"
       url: "https://ecommons.cornell.edu/bitstreams/5d9b3a7f-20f4-4bac-9007-94c578c6b6af/download"
@@ -32,27 +31,24 @@
 - title: "RuFaS vs. COMET-Farm: methodological comparison of greenhouse-gas estimates"
   theme: modeling
   image: "comet-farm.jpg"
-  role: "Graduate Research Assistant (lead)"
+  role: "Lead"
   description: >
-    Comparing the Ruminant Farm Systems (RuFaS) model against COMET-Farm, a
-    greenhouse-gas accounting tool widely used by researchers and
-    policymakers, to identify the methodological drivers of differing
-    emissions estimates across US Holstein dairy systems.
+    Comparing the RuFaS model with COMET-Farm to identify the methodological
+    drivers of differing greenhouse-gas estimates for US dairy systems.
   methods: "Whole-farm simulation (RuFaS), COMET-Farm benchmarking, 5 US Holstein dairy case farms"
-  outcomes: "Manuscript in preparation (planned submission August 2026)."
+  outcomes: "Manuscript in preparation (2026)."
   links: []
 
 - title: "Multi-laboratory evaluation of manure nutrient analyses"
   theme: ammonia
   image: "manure-lab-variability.jpg"
-  role: "Project director"
+  role: "Lead"
   description: >
-    Directed a multi-lab evaluation of manure volatile solids, total nitrogen,
-    and total ammoniacal nitrogen analyses across 6 commercial laboratories to
-    quantify measurement variability that propagates into farm nutrient and
-    emissions accounting.
-  methods: "Interlaboratory comparison, manure and biological sampling, statistical analysis"
-  outcomes: "Published in Journal of Dairy Science Communications (2026)."
+    Multi-lab evaluation of manure volatile solids, nitrogen, and ammoniacal
+    nitrogen across 6 laboratories, quantifying measurement variability that
+    affects farm nutrient and emissions accounting.
+  methods: "Interlaboratory comparison, manure sampling, statistical analysis"
+  outcomes: "Published in JDS Communications (2026)."
   links:
     - label: "Read the paper"
       url: "https://doi.org/10.3168/jdsc.2025-1007"
@@ -60,28 +56,27 @@
 - title: "Transdisciplinary model-based systems engineering of the RuFaS model"
   theme: modeling
   image: "rufas-mbse.png"
-  role: "Graduate Research Assistant (lead author)"
+  role: "Lead"
   description: >
-    Applied model-based systems engineering (MBSE) and transdisciplinary
-    methods to formalize the architecture and development process of the
-    Ruminant Farm Systems (RuFaS) model, improving traceability, modularity,
-    and collaboration across animal science, agronomy, and software teams.
-  methods: "Model-based systems engineering (MBSE), transdisciplinary requirements engineering, software architecture"
-  outcomes: "Published as lead author in Frontiers in Sustainability (2025); simulated and benchmarked 12 US dairy systems against published data."
+    Applied model-based systems engineering (MBSE) to formalize the
+    architecture and development of the RuFaS model, benchmarked across
+    12 dairy management scenarios.
+  methods: "Model-based systems engineering (MBSE), requirements engineering"
+  outcomes: "Published as lead author in Frontiers in Sustainability (2025)."
   links:
     - label: "Read the paper"
       url: "https://doi.org/10.3389/frsus.2025.1561453"
 
-- title: "Automated ration formulation within RuFaS"
+- title: "Evaluation of automated ration formulation in RuFaS"
   theme: modeling
   image: "rufas.png"
   role: "Lead"
   description: >
-    Built automated ration-formulation logic for lactating cows within RuFaS
-    and compared outcomes across nutrient requirement models, showing model
-    choice measurably changes predicted diets and emissions estimates.
+    Built automated ration-formulation logic for lactating cows in RuFaS and
+    compared nutrient requirement models, showing model choice changes
+    predicted diets and emissions.
   methods: "Ration optimization, nutrient requirement modeling, RuFaS"
-  outcomes: "Presented at the Canadian Society of Animal Science meeting (2024)."
+  outcomes: "Presented at the Animal Modellers' Group annual meeting (2023)."
   links:
     - label: "Proceedings"
       url: "https://doi.org/10.1139/cjas-2024-0024#subarticle-8"
@@ -89,17 +84,28 @@
 - title: "Tailored lactation-curve estimation for whole-farm dairy simulation"
   theme: modeling
   image: "lactation-curve.jpg"
-  role: "Co-author"
+  role: "Co-lead"
   description: >
-    Developed a 2-step approach for tailored lactation-curve estimation and
-    quantified its systemic impacts on whole-farm dairy simulation outputs,
-    showing how curve choice propagates through production and emissions
-    estimates.
-  methods: "Lactation-curve modeling, 2-step estimation, whole-farm simulation (RuFaS)"
+    A 2-step approach for tailored lactation-curve estimation, showing how
+    curve choice propagates through production and emissions estimates in
+    whole-farm dairy simulation.
+  methods: "Lactation-curve modeling, whole-farm simulation (RuFaS)"
   outcomes: "Published in Journal of Dairy Science (2025)."
   links:
     - label: "Read the paper"
       url: "https://doi.org/10.3168/jds.2025-26334"
+
+- title: "Markov-chain herd simulation for feed-additive economics"
+  theme: modeling
+  image: "Markov-chain_herd_simulation.jpg"
+  role: "Lead"
+  description: >
+    A Markov-chain herd simulation quantifying the economic feasibility of
+    3-nitrooxypropanol and bromoform-containing feed additives for enteric
+    methane mitigation.
+  methods: "Markov-chain herd simulation, economic feasibility analysis"
+  outcomes: "Presented at the Animal Science Modellers' Group annual meeting (2026)."
+  links: []
 
 # Note: customer-discovery (Green Tech Fellowship) and the FFAR Fellow StoryMap
 # were removed from Research — both are covered on the Media page and the

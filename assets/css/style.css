@@ -114,7 +114,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .brand:hover{ text-decoration:none; }
 .brand-mark{
-  width:34px; height:34px; flex:0 0 auto;
+  width:34px; height:34px; flex:0 0 auto; align-self:center;
 }
 .brand-name{ font-size:1.05rem; letter-spacing:.01em; }
 .brand-role{
@@ -226,6 +226,9 @@ section{ padding: 56px 0; }
 h2.section-title{
   font-size:1.6rem; margin:0 0 8px; letter-spacing:-0.01em;
 }
+/* Colored accent bar for subsection headings */
+.section-title.accent-green{ border-left:4px solid var(--pasture); padding-left:12px; }
+.section-title.accent-ochre{ border-left:4px solid var(--ochre); padding-left:12px; }
 .section-sub{
   color:var(--slate); margin:0 0 32px; max-width:46em;
 }
@@ -325,6 +328,32 @@ h2.section-title{
 .timeline-date{ font-size:.82rem; color:var(--ochre); font-weight:bold; text-transform:uppercase; letter-spacing:.05em; }
 .timeline-item h3{ margin:6px 0 6px; }
 .timeline-item p{ color:var(--slate); margin:0 0 6px; }
+
+/* At-a-glance facts list (About) */
+.facts{ list-style:none; margin:0 0 8px; padding:0; }
+.facts li{ padding:11px 0; border-bottom:1px solid var(--line); color:var(--slate); }
+.facts li strong{
+  display:inline-block; min-width:104px; margin-right:8px;
+  color:var(--pasture); font-size:.82rem; text-transform:uppercase; letter-spacing:.04em;
+  vertical-align:baseline;
+}
+@media(max-width:520px){ .facts li strong{ display:block; min-width:0; margin-bottom:2px; } }
+
+/* Compact activity feed (Home "Currently") */
+.update-list{ list-style:none; margin:0; padding:0; }
+.update-list li{
+  display:flex; gap:18px; align-items:baseline;
+  padding:14px 0; border-bottom:1px solid var(--line);
+}
+.update-date{
+  flex:0 0 92px; font-size:.78rem; color:var(--ochre);
+  font-weight:bold; text-transform:uppercase; letter-spacing:.04em;
+}
+.update-title{ color:var(--slate); }
+@media(max-width:520px){
+  .update-list li{ flex-direction:column; gap:3px; }
+  .update-date{ flex-basis:auto; }
+}
 
 /* ============================================================
    Footer

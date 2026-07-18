@@ -53,10 +53,9 @@ research.html         Research themes — cards from _data/projects.yml (each wi
                       for the full publication list
 publications.html     Redirect stub → research.html (page merged into Research)
 teaching.html         Teaching — guest lectures + TA courses (static lists)
-news.html             News feed — generated from _data/news.yml
-media.html            Media & recognition — press cards, FFAR StoryMap, honors
+news.html             Redirect stub → /#currently (feed merged into Home)
+media.html            Featured — press cards, FFAR StoryMap, honors
 contact.html          Contact — social icon cards
-cv.html               CV page (links to assets/files/Haowen-Hu-CV.pdf)
 404.html
 
 _config.yml           Site title, tagline, and social URLs (edit links here)
@@ -66,16 +65,19 @@ _data/                awards.yml, news.yml, projects.yml, publications.yml
 assets/css/style.css  All styles (design tokens + dark mode)
 assets/js/main.js     Mobile nav toggle
 assets/img/           Photos, favicon, og-image
-assets/files/         CV PDF
 ```
+
+> The CV is intentionally **not** published on the site (no CV page, no PDF in
+> the repo) &mdash; share it directly with people who ask.
 
 ## 4. Editing content (no HTML needed)
 
 Most content lives in `_data/*.yml` — copy an existing block to add an item:
 
-- **News** (`news.yml`): reverse-chron activity feed. Use a **real** date
-  (`YYYY-MM-DD` or `YYYY-MM`). Keep ~last 2 years; press coverage goes on Media,
-  not here.
+- **News / recent updates** (`news.yml`): reverse-chron activity feed, rendered
+  in the **Currently** section on the Home page (`/#currently`) — there is no
+  separate News page. Use a **real** date (`YYYY-MM-DD` or `YYYY-MM`). Keep
+  ~last 2 years; press coverage goes on Featured, not here.
 - **Publications**: the full list lives on Google Scholar (linked from Research).
   `publications.yml` is legacy data, no longer rendered. To feature a paper on
   the site, give its project a `links` entry (see Projects). `/publications.html`

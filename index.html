@@ -95,40 +95,32 @@ permalink: /
     <p class="eyebrow">Research interests</p>
     <h2 class="section-title">Themes I return to</h2>
     <ul class="chips">
-      <li class="chip">Whole-farm & systems modeling</li>
-      <li class="chip">Dairy sustainability &amp; GHG emissions</li>
+      <li class="chip">Whole-farm &amp; systems modeling</li>
       <li class="chip">Ammonia &amp; manure management</li>
-      <li class="chip">Precision livestock &amp; ag data science</li>
+      <li class="chip">Dairy sustainability &amp; GHG emissions</li>
       <li class="chip">AI, LLMs &amp; agent workflows in agriculture</li>
     </ul>
     <p><a href="{{ '/research.html' | relative_url }}">See how these break down into specific projects →</a></p>
   </div>
 </section>
 
-<section>
-  <div class="wrap">
+<section id="currently">
+  <div class="wrap" style="max-width:760px;">
     <p class="eyebrow">Currently</p>
-    <h2 class="section-title">Featured, right now</h2>
-    <div class="grid">
-      <div class="card">
-        <p class="meta">Current focus</p>
-        <h3>RuFaS × COMET-Farm comparison</h3>
-        <p>Comparing RuFaS against COMET-Farm to find what drives differing greenhouse-gas estimates across five US
-          Holstein dairies — manuscript in preparation, planned submission August 2026.</p>
-      </div>
-      <div class="card">
-        <p class="meta">Fellowship</p>
-        <h3>FFAR Fellow, 2023–2026</h3>
-        <p>One of 30 fellows nationally in the Foundation for Food &amp; Agriculture Research fellowship, with 150+
-          hours of professional development in leadership, communication, and entrepreneurship.</p>
-      </div>
-      <div class="card">
-        <p class="meta">Recognition</p>
-        <h3>2026 NMPF Dairy Leadership Scholarship</h3>
-        <p>Awarded by the National Milk Producers Federation for doctoral research advancing whole-farm environmental
-          modeling in US dairy systems.</p>
-        <a href="{{ '/media.html' | relative_url }}">Read more →</a>
-      </div>
-    </div>
+    <h2 class="section-title">Recent updates</h2>
+    <ul class="update-list">
+      {% assign sorted = site.data.news | sort: "date" | reverse %}
+      {% for item in sorted limit:4 %}
+      <li>
+        <span class="update-date">{{ item.date }}</span>
+        {% if item.link_url and item.link_url != "" %}<a href="{{ item.link_url }}">{{ item.title }}</a>{% else %}<span class="update-title">{{ item.title }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% comment %}
+      Author note (not rendered): the site's activity feed, fed from _data/news.yml
+      (newest first, latest 4 shown). Add an update there; change `limit:4` to show
+      more. Keep ~last 2 years; press coverage lives on Featured.
+    {% endcomment %}
   </div>
 </section>

@@ -1,32 +1,19 @@
 ---
-layout: default
-title: News & Updates
-description: "Professional updates and milestones from Haowen Hu's research and fellowships."
 permalink: /news.html
+sitemap: false
 ---
-<section>
-  <div class="wrap" style="max-width:760px;">
-    <p class="eyebrow">News & Updates</p>
-    <h1 class="section-title">Updates</h1>
-    <p class="section-sub">Milestones, presentations, and recognition.</p>
-
-    <ul class="timeline">
-      {% assign sorted = site.data.news | sort: "date" | reverse %}
-      {% for item in sorted %}
-      <li class="timeline-item">
-        <span class="timeline-date">{{ item.date }}</span>
-        <h3>{{ item.title }}{% if item.needs_review %} <span class="status-badge review">Please verify</span>{% endif %}</h3>
-        <p>{{ item.summary }}</p>
-        {% if item.link_url and item.link_url != "" %}<a href="{{ item.link_url }}">{{ item.link_label }} →</a>{% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-
-    {% comment %}
-      Author note (not rendered): to add an update, open _data/news.yml and copy
-      an existing block at the top. Use a real date (YYYY-MM-DD or YYYY-MM) — do
-      not invent one. Items flagged `needs_review: true` render a "Please verify"
-      badge and should be confirmed before publishing.
-    {% endcomment %}
-  </div>
-</section>
+<!-- The News page was merged into the Home "Currently" section. This stub forwards old links. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="{{ '/#currently' | absolute_url }}">
+  <meta http-equiv="refresh" content="0; url={{ '/#currently' | relative_url }}">
+  <title>Redirecting to recent updates</title>
+</head>
+<body>
+  <p>Recent updates now live in the
+  <a href="{{ '/#currently' | relative_url }}">Currently section on the home page</a>.</p>
+</body>
+</html>

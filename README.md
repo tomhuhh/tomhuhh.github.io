@@ -16,11 +16,11 @@ _includes/           head.html, header.html (nav), footer.html.
 _data/               <- MOST CONTENT UPDATES HAPPEN HERE
   publications.yml   Legacy data (page merged into Research; kept for reference).
   projects.yml       Research project cards, incl. optional `image` graphical abstract.
-  news.yml           Dated timeline entries for the News & Updates page.
-  awards.yml         Honors and awards list (Media & Recognition page).
+  news.yml           Dated updates, shown in the Home "Currently" section.
+  awards.yml         Honors and awards list (Featured page).
 index.html, about.html, research.html, teaching.html,
-news.html, media.html, cv.html, contact.html, 404.html
-(publications.html is a redirect stub → research.html)
+media.html, contact.html, 404.html
+(publications.html and news.html are redirect stubs → research.html and /#currently)
                      One file per page. Mostly static prose + Liquid loops
                      over the _data files above.
 assets/
@@ -41,7 +41,7 @@ Research). To surface a paper on the site, add/edit its project in
 `modeling`, `ammonia`, `precision`, or `ai` (this also places it in the
 matching section of the Research page).
 
-**Add a news/update item** → open `_data/news.yml`, copy a block to the top,
+**Add a news/update item** (shows in Home "Currently") → open `_data/news.yml`, copy a block to the top,
 use a real date. Don't invent a date — leave it out or ask before guessing.
 
 **Add an award** → open `_data/awards.yml`, copy a block.

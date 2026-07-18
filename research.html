@@ -7,16 +7,14 @@ permalink: /research.html
 <section>
   <div class="wrap">
     <p class="eyebrow">Research</p>
-    <h1 class="section-title">Research themes</h1>
-    <p class="section-sub">
-      My work sits under one umbrella &mdash; whole-farm environmental modeling
-      for dairy systems &mdash; organized into the themes below. Each project
-      links to its publication, presentation, or external resource. For the
-      complete list of publications and citation metrics, see my
+    <h1 class="section-title">Modeling sustainable dairy systems</h1>
+    <p class="section-sub" style="text-wrap:balance;">
+      Whole-farm environmental modeling for dairy, organized into the themes
+      below. For the full publication list, see my
       <a href="{{ site.scholar_url }}">Google Scholar profile</a>.
     </p>
 
-    <h2 class="section-title" style="font-size:1.3rem;">Whole-farm environmental & systems modeling</h2>
+    <h2 class="section-title" style="font-size:1.3rem;">Whole-farm simulation & systems modeling</h2>
     <div class="grid">
       {% assign items = site.data.projects | where: "theme", "modeling" %}
       {% for p in items %}
@@ -54,8 +52,8 @@ permalink: /research.html
         <img class="card-fig" src="{{ '/assets/img/fair-for-ag-agent.png' | relative_url }}" alt="Graphical abstract: FAIR principles for agricultural AI agents" loading="lazy">
         <p class="meta">Emerging direction</p>
         <h3>FAIR principles for agricultural AI agents</h3>
-        <p>Co-author on "Future-proofing agricultural research: FAIR principles for Agriculture AI Agents (FAIR4AG2)," under review at Frontiers in Artificial Intelligence.</p>
-        <span class="status-badge review">Under review</span>
+        <p>Co-author on "Future-proofing agricultural research: FAIR principles for Agriculture AI Agents (FAIR4AG2)," accepted at Frontiers in Artificial Intelligence.</p>
+        <span class="status-badge">Accepted</span>
       </div>
       {% comment %}
         Author note (not rendered): to add a specific AI/LLM project write-up

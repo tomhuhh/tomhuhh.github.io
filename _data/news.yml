@@ -2,7 +2,7 @@
 # IMPORTANT: only add items with a real, confirmed date — no placeholder dates.
 # SCOPE: this is a recent-activity feed — keep roughly the last ~2 years and
 # prune older items. Press coverage about Haowen lives on the Media page, not here.
-- date: "2026-06-09"
+- date: "2026-06"
   title: "Awarded the 2026 NMPF National Dairy Leadership Scholarship"
   summary: >
     The National Milk Producers Federation named Haowen one of five 2026
@@ -33,7 +33,7 @@
   link_label: "Read the paper"
   link_url: "https://doi.org/10.3168/jdsc.2025-1007"
 
-- date: "2025-08-25"
+- date: "2025-08"
   title: "Published lead-author paper on RuFaS systems engineering"
   summary: >
     Published “Transdisciplinary model-based systems engineering in the
@@ -42,7 +42,7 @@
   link_label: "Read the paper"
   link_url: "https://doi.org/10.3389/frsus.2025.1561453"
 
-- date: "2025-08-18"
+- date: "2025-08"
   title: "Advanced to Ph.D. candidacy"
   summary: >
     Haowen passed his Ph.D. A exam at Cornell and advanced to candidacy,
