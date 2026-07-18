@@ -72,7 +72,7 @@
   image: "rufas.png"
   role: "Lead"
   description: >
-    Built automated ration-formulation logic for lactating cows in RuFaS and
+    Evaluated automated ration-formulation logic for lactating cows in RuFaS and
     compared nutrient requirement models, showing model choice changes
     predicted diets and emissions.
   methods: "Ration optimization, nutrient requirement modeling, RuFaS"
